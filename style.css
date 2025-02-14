@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navbar-height: 59px;
+}
+
+
+#logo {
+  margin: 2px 26px;
+}
+
+#logo img {
+  height: 67px;
+  margin: 3px 32px;
+  border-radius: 34px;
+}
+
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+#logo img {
+  height: 50px;
+  border-radius: 10px;
+}
+
+
+#nav-links {
+  display: flex;
+  list-style: none;
+}
+
+#nav-links li {
+  margin: 0 10px;
+}
+
+#nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+#nav-links li a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background: url("bg.1.jpg") no-repeat center center/cover;
+  padding: 18px 20px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+#home h1,
+#home p {
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  font-size: xxx-large;
+}
+
+#home p {
+  font-size: 20px;
+}
+
+
+.center {
+  text-align: center;
+  color: #111211;
+}
+
+#services {
+  margin: 12px 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#services .box {
+  border: 2px solid  #34caae;
+  margin: 28px;
+  border-radius: 25px;
+  background-color: #b3bcc370;
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+#services .box img {
+  height: 156px;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px;
+}
+
+
+/* About Us Section */
+#client-section {
+  text-align: center;
+  padding: 142px 20px;
+  background:url(AE.jpg);
+}
+
+#client-section h3 {
+  font-size: 24px;
+  color: #a32f2f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#client-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#client-section p {
+  font-size: 18px;
+  color: #bbfff5;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+#clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.client-item {
+  padding: 24px;
+}
+
+#clients img {
+  height: 130px;
+  border-radius: 30px;
+  max-width: 100%;
+}
+
+
+#contact {
+  position: relative;
+  background: url(D.jpg) no-repeat center center/cover;
+  padding: 20px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+#contact-box form {
+  width: 100%;
+  max-width: 500px;
+}
+
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+  color: #000;
+}
+
+.h-primary-center {
+  color: #0c0c0c;
+  text-align: center;
+}
+.btn {
+  padding: 12px 25px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+
+
+footer {
+  text-align: center;
+  color: rgb(21, 19, 19);
+  background-color: rgb(210, 199, 199);
+  padding: 20px;
+}
+
+
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 3.5rem;
+  padding: 12px;
+  color: #000;
+  text-align: center;
+}
+
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 1.8rem;
+  margin: 0px 85px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #9b5959;
+  background-color: #1a1a1a;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #9b5959;
+  color: white;
+}
+
+
+#signin, #signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background:url('DE.jpg')
+}
+
+
+#signin-box, #signup-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.h-primary {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 140px;
+  padding: 10px;
+  background-color:#a72e28;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color:rgb(81, 142, 212);
+}
+
+p {
+  margin-top: 15px;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #nav-links li {
+    margin: 10px 0;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  #home {
+    padding: 10px;
+    min-height: 90vh; /* Adjust height for small screens */
+  }
+
+  #home h1 {
+    font-size: 1.8rem; /* Smaller font for iPhone 5 */
+  }
+
+  #home p {
+    font-size: 16px; /* Smaller paragraph text */
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%; /* Full screen width */
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 0;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links li {
+    margin: 10px 0;
+  }
+
+  #nav-links li a {
+    font-size: 1rem; /* Smaller font size for small screens */
+    padding: 10px;
+  }
+}
